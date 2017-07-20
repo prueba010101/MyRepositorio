@@ -13,8 +13,15 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(this, "hola mundo ejemplo", Toast.LENGTH_SHORT).show();
         Toast.makeText(this, "hola ", Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "esta", Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "es mi prueba", Toast.LENGTH_SHORT).show();
+        super.onResume();
 
+    }
+
+    @Override
+    protected void onResume(){
+        Toast.makeText(this, "hola mundo ejemplo", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "hola ", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "hola mundo ejemplo", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "hola ", Toast.LENGTH_SHORT).show();
     }
 }
